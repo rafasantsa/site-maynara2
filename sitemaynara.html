@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+    <style>
+        body{
+        
+            
+            background-image: url(pngtree-pink-heart-valentine-background-picture-image_1307863.jpg);
+            font-family: Arial, Helvetica, sans-serif
+            
+            
+            
+        }
+           form{
+             width: 350px;
+             margin: 200px auto;
+             text-align: center;
+             
+               
+          
+
+              }
+              input{
+                display: block;
+                margin: 10px auto;
+                width: 250px;
+                height: 30px;
+              }
+
+              h1{
+                font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+                color black;
+                
+              }    </style>
+</head>
+<body>
+    <form>
+        <h1>Login</h1>
+        <input type="text" placeholder="usuario" id="usuario">
+        <br><br>
+        <input type="password" placeholder="senha" id="senha">
+        <br><br>
+        <input type="submit" onclick="logar();return false">
+        
+    </form>
+
+    <script>
+        function logar(){
+            var login = document.getElementById('usuario').value;
+            var Senha = document.getElementById('senha').value;
+        
+
+            if(login == "naraluizza" && Senha == "manezona"){
+                alert("bem-vinda manezona, leia devagar, eu te amo<3");
+                location.href = "https://complemento.vercel.app";
+
+            }else{
+                alert("usuario e senha incorretos")
+            }
+        }
+    </script>
+
+    
+</body>
+</html>
